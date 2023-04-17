@@ -16,8 +16,8 @@ body {
 
 .calculator {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 20px;
+    right: 20px;
     width: 20%;
     height: 50%;
     display: grid;
@@ -32,4 +32,14 @@ body {
 
 .all-clear {
     grid-column: span 4;
+}
+
+.paper {
+    width: 22%;
+    height: 62%;
+    background-color: aqua;
+    position: absolute;
+    bottom: 13%;
+    left: 24%;
+    transform: rotate(2deg);
 }
