@@ -13,3 +13,23 @@ body {
     background-repeat: no-repeat;
     background-position: bottom;
 }
+
+.calculator {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    border: 2px solid black;
+}
+
+#inputField {
+    grid-column: span 4;
+}
+
+.all-clear {
+    grid-column: span 4;
+}
