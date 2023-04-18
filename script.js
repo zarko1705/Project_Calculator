@@ -20,3 +20,15 @@ document.querySelector(".deleteBtn").addEventListener("click", () => {
     let orderList = document.querySelector(".ordered-list");
     orderList.innerHTML = "";
 });
+
+// adding date and time
+
+function updateDateAndTime() {
+    const now = new Date();
+    const date = now.toLocaleDateString();
+    const time = now.toLocaleTimeString();
+    document.getElementById("date").textContent = date;
+    document.getElementById("time").textContent = time;
+}
+
+setInterval(updateDateAndTime, 1000);
