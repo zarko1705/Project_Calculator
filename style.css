@@ -29,6 +29,7 @@ body {
     border-left: 2px solid white;
     border-bottom: 2px solid white;
     background-color: black;
+    border-radius: 5px;
     box-shadow: -18px 13px 22px black;
 }
 
@@ -57,6 +58,7 @@ body {
 .all-clear {
     grid-column: span 4;
     background-color: #f29f05;
+    border: 1px solid black;
     font-size: 2rem;
     transition: 0.3s;
 }
@@ -114,4 +116,31 @@ li {
     background-color: #f23030;
     border-radius: 50px;
     color: white;
+}
+
+.date-time {
+    width: 21%;
+    height: 40%;
+    background-color: #f29f05;
+    position: absolute;
+    top: 22%;
+    right: 28%;
+}
+
+.title {
+    text-align: center;
+}
+
+.date {
+    width: 100%;
+    height: 40px;
+    background-color: #04c4d9;
+    margin-top: 20px;
+}
+
+.time {
+    width: 100%;
+    height: 40px;
+    background-color: #69fa34;
+    margin-top: 20px;
 }
