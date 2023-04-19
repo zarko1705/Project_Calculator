@@ -5,9 +5,46 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
-        <title>Document</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+            rel="stylesheet"
+        />
+        <title>Calculator</title>
     </head>
     <body>
+        <div class="calculator">
+            <input type="text" id="inputField" readonly />
+            <button class="all-clear" onclick="clearInput()">AC</button>
+            <button class="btn" onclick="display('7')">7</button>
+            <button class="btn" onclick="display('8')">8</button>
+            <button class="btn" onclick="display('9')">9</button>
+            <button class="btn btn-op" onclick="display('/')">/</button>
+            <button class="btn" onclick="display('4')">4</button>
+            <button class="btn" onclick="display('5')">5</button>
+            <button class="btn" onclick="display('6')">6</button>
+            <button class="btn btn-op" onclick="display('*')">*</button>
+            <button class="btn" onclick="display('1')">1</button>
+            <button class="btn" onclick="display('2')">2</button>
+            <button class="btn" onclick="display('3')">3</button>
+            <button class="btn btn-op" onclick="display('-')">-</button>
+            <button class="btn" onclick="display('0')">0</button>
+            <button class="btn" onclick="display('.')">.</button>
+            <button class="btn btn-equal" onclick="calculate()" class="equal">=</button>
+            <button class="btn btn-op" onclick="display('+')">+</button>
+        </div>
+        <div class="paper">
+            <ol class="ordered-list"></ol>
+            <button class="deleteBtn">Delete</button>
+        </div>
+        <div class="date-time">
+            <h1 class="title">Today ...</h1>
+            <div class="date" id="date"></div>
+            <div class="time" id="time"></div>
+        </div>
         <script src="/script.js"></script>
     </body>
 </html>
